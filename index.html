@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyek UAS PPLM</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Fashion</h1>
+      <p>
+        Selamat datang di aplikasi fashion kami. Temukan berbagai gaya fashion,
+        merencanakan outfit (match and mix), dan memberikan informasi seputar
+        fashion.
+      </p>
+    </header>
+    <!--Navigasi Menu-->
+    <nav>
+      <ul>
+        <li>
+          <a href="#gambar">Gambar</a>
+          <a href="#audio">Audio</a>
+          <a href="#video">Video</a>
+          <a href="#form">Form</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+
+
+  <!--Konten Gambar-->
+  <section id="gambar">
+    <h2>Gambar Contoh Produk Fashion</h2>
+    <p>Gambar ini merupakan contoh produk fashion yang kami tampilkan.
+      Dengan gambar yang menarik, kami berharap dapat menarik perhatian pengguna.
+    </p>
+
+    <div class="card-container">
+    <div class="card">
+      <img src="assets/images/download (2).jpg" alt="Contoh Gambar"/>
+    
+      <div class="card-content">
+        <h3>Contoh Gambar</h3>
+        <p>
+          Gambar ini menunjukkan contoh fashion yang kami tampilkan. Dengan desain yang menarik,
+          kami berharap dapat meningkatkan minat pengguna.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/images/download (2).jpg" alt="Contoh Gambar"/>
+    
+      <div class="card-content">
+        <h3>Contoh Gambar</h3>
+        <p>
+          Gambar ini menunjukkan contoh fashion yang kami tampilkan. Dengan desain yang menarik,
+          kami berharap dapat meningkatkan minat pengguna.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/images/download (2).jpg" alt="Contoh Gambar"/>
+
+      <div class="card-content">
+        <h3>Contoh Gambar</h3>
+        <p>
+          Gambar ini menunjukkan contoh fashion yang kami tampilkan. Dengan desain yang menarik,
+          kami berharap dapat meningkatkan minat pengguna.
+        </p>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!--Konten Audio-->
+<section id="audio">
+<h2>Audio Produk Fashion</h2>
+  <audio src="assets/audio/audiojazz.mp3" controls type="audio/mp3">
+  </audio>
+</section>
+  
+<!--Konten Video-->
+<section id="video">
+<h2>Contoh Video Fashion</h2>
+<video src="assets/video/Download.mp4" controls type="video/mp4">
+</video>
+</section>
+
+<!--Konten Form-->
+<section id="form">
+  <h2>Formulir Pendaftaran</h2>
+  <form onsubmit="return showMessage();">
+    <input
+    type="text"
+    name="name"
+    id="name"
+    placeholder="Masukkan nama anda"
+    required
+    />
+    <button type="submit">Kirim</button>
+    <p id="output"></p>
+  </form>
+</section>
+
+<script src="assets/js/script.js"> </script>
+</html>
+
