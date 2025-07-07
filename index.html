@@ -7,103 +7,174 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Fashion</h1>
-      <p>
-        Selamat datang di aplikasi fashion kami. Temukan berbagai gaya fashion,
-        merencanakan outfit (match and mix), dan memberikan informasi seputar
-        fashion.
-      </p>
-    </header>
-    <!--Navigasi Menu-->
-    <nav>
-      <ul>
-        <li>
-          <a href="#gambar">Gambar</a>
-          <a href="#audio">Audio</a>
-          <a href="#video">Video</a>
-          <a href="#form">Form</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <h1>Museum Seni Louvre</h1>
+        <h2>
+          Selamat datang di platform Museum Seni Louvre! Temukan keindahan dan
+          inspirasi dalam karya-karya seni yang dipamerkan di museum kami.
+        </h2>
+      </header>
+
+      <!-- Navigasi -->
+      <nav>
+        <ul>
+          <li><a href="#informasi">Informasi</a></li>
+          <li><a href="#koleksi">Gambar</a></li>
+          <li><a href="#audio">Audio</a></li>
+          <li><a href="#video1">Video</a></li>
+          <li><a href="#form">Form</a></li>
+        </ul>
+      </nav>
+
+      <!-- Info Museum -->
+      <section id="info-museum">
+        <h2>Tahukah Kamu?</h2>
+        <div class="card-container">
+          <div class="card1">
+            <img
+              src="assets/images/Museum Seni Louvre.png"
+              alt="Definisi Museum"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Koleksi Gambar -->
+      <section id="koleksi">
+        <h2>Koleksi Karya Museum Seni Louvre</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="assets/images/monalisa.jpg" alt="Lukisan Mona Lisa" />
+            <div class="card-content">
+              <h3>Lukisan Mona Lisa</h3>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/patung1.jpg" alt="Patung Venus de Milo" />
+            <div class="card-content">
+              <h3>Patung Venus de Milo</h3>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="assets/images/napoleon.jpg"
+              alt="Lukisan Le Sacre de Napolen"
+            />
+            <div class="card-content">
+              <h3>Lukisan Le Sacre de Napolen</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Denah Museum -->
+      <section id="denah">
+        <h2>Denah Museum Seni Louvre</h2>
+        <div class="card-container">
+          <div class="card1">
+            <img src="assets/images/denahmuseum.jpg" alt="Denah Museum" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Informasi Waktu Berkunjung -->
+      <section id="informasi">
+        <h2>Waktu Berkunjung Museum Seni Louvre</h2>
+        <h3>Senin - Jumat: 09.00 - 16.00</h3>
+        <h3>Sabtu - Minggu: 09.00 - 20.00</h3>
+        <h3>
+          Perhatian: Manajemen berhak mengambil kebijakan sewaktu-waktu sesuai
+          situasi dan kondisi yang ada.
+        </h3>
+      </section>
+
+      <!-- Video Petunjuk -->
+      <section id="video1">
+        <h2>Petunjuk Untuk Pengunjung Museum Seni Louvre</h2>
+        <video
+          src="assets/video/WhatsApp Video 2025-07-07 at 08.59.53.mp4"
+          controls
+          type="video/mp4"
+        ></video>
+        <h3>
+          1. Museum Louvre sangat luas, jadi gunakan peta dan panduan audio
+          (yang bisa dipesan online) untuk membantu navigasi dan memaksimalkan
+          kunjungan Anda.
+        </h3>
+        <h3>
+          2. Selain Piramida, Anda juga bisa masuk melalui Pintu Masuk Richelieu
+          atau Carrousel du Louvre (melalui pusat perbelanjaan bawah tanah).
+        </h3>
+        <h3>
+          3. Jangan menyentuh karya seni dan jangan bersandar pada karya seni.
+        </h3>
+        <h3>4. Perhatikan barang bawaan Anda dan waspadalah terhadap copet.</h3>
+        <h3>
+          5. Kunjungan ke Louvre bisa memakan waktu lama, jadi pastikan Anda
+          sudah makan dan membawa camilan untuk menjaga energi.
+        </h3>
+        <h3>
+          6. Antrean untuk membeli air di dalam museum bisa panjang, jadi
+          disarankan membawa botol air sendiri.
+        </h3>
+        <h3>
+          7. Bawalah tas kecil dan periksa kembali barang bawaan Anda, karena
+          tas besar tidak diperbolehkan masuk ke dalam museum.
+        </h3>
+        <h3>
+          8. Jangan lupa mengabadikan momen dengan mengambil foto atau video di
+          tempat yang diperbolehkan.
+        </h3>
+      </section>
+
+      <!-- Audio Sambutan -->
+      <section id="audio">
+        <h2>Audio Sambutan Museum Seni Louvre</h2>
+        <audio
+          src="assets/audio/WhatsApp Audio 2025-07-07 at 12.14.32.mp3"
+          controls
+          type="audio/mp3"
+        ></audio>
+      </section>
+
+      <!-- Video Promosi -->
+      <section id="video2">
+        <h2>Video Museum Seni Louvre</h2>
+        <video
+          src="assets/video/WhatsApp Video 2025-07-07 at 08.59.48.mp4"
+          controls
+          type="video/mp4"
+        ></video>
+      </section>
+
+      <!-- Form Absensi -->
+      <section id="form">
+        <h2>Absensi Pengunjung Museum Seni Louvre</h2>
+        <form onsubmit="return showMessage();">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Masukkan nama anda"
+            required
+          />
+          <input
+            type="text"
+            name="asal"
+            id="asal"
+            placeholder="Asal"
+            required
+          />
+          <input type="date" name="tanggal" id="tanggal" required /><br /><br />
+          <button type="submit">Kirim</button>
+          <p id="output"></p>
+        </form>
+      </section>
+    </div>
+
+    <!-- Script -->
+    <script src="assets/js/script.js"></script>
   </body>
-
-
-  <!--Konten Gambar-->
-  <section id="gambar">
-    <h2>Gambar Contoh Produk Fashion</h2>
-    <p>Gambar ini merupakan contoh produk fashion yang kami tampilkan.
-      Dengan gambar yang menarik, kami berharap dapat menarik perhatian pengguna.
-    </p>
-
-    <div class="card-container">
-    <div class="card">
-      <img src="assets/images/download (2).jpg" alt="Contoh Gambar"/>
-    
-      <div class="card-content">
-        <h3>Contoh Gambar</h3>
-        <p>
-          Gambar ini menunjukkan contoh fashion yang kami tampilkan. Dengan desain yang menarik,
-          kami berharap dapat meningkatkan minat pengguna.
-        </p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="assets/images/download (2).jpg" alt="Contoh Gambar"/>
-    
-      <div class="card-content">
-        <h3>Contoh Gambar</h3>
-        <p>
-          Gambar ini menunjukkan contoh fashion yang kami tampilkan. Dengan desain yang menarik,
-          kami berharap dapat meningkatkan minat pengguna.
-        </p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="assets/images/download (2).jpg" alt="Contoh Gambar"/>
-
-      <div class="card-content">
-        <h3>Contoh Gambar</h3>
-        <p>
-          Gambar ini menunjukkan contoh fashion yang kami tampilkan. Dengan desain yang menarik,
-          kami berharap dapat meningkatkan minat pengguna.
-        </p>
-      </div>
-    </div>
-    </div>
-    </div>
-  </section>
-
-  <!--Konten Audio-->
-<section id="audio">
-<h2>Audio Produk Fashion</h2>
-  <audio src="assets/audio/audiojazz.mp3" controls type="audio/mp3">
-  </audio>
-</section>
-  
-<!--Konten Video-->
-<section id="video">
-<h2>Contoh Video Fashion</h2>
-<video src="assets/video/Download.mp4" controls type="video/mp4">
-</video>
-</section>
-
-<!--Konten Form-->
-<section id="form">
-  <h2>Formulir Pendaftaran</h2>
-  <form onsubmit="return showMessage();">
-    <input
-    type="text"
-    name="name"
-    id="name"
-    placeholder="Masukkan nama anda"
-    required
-    />
-    <button type="submit">Kirim</button>
-    <p id="output"></p>
-  </form>
-</section>
-
-<script src="assets/js/script.js"> </script>
 </html>
-
